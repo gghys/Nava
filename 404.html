@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/Nava/" />
+    <title>Redirection…</title>
+    <script>
+      (function() {
+        // Redirige automatiquement vers la version hash (#)
+        var base = "/Nava/";
+        var path = window.location.pathname;
+        if (!path.startsWith(base)) path = base;
+        window.location.replace(base + "#" + path.slice(base.length) + window.location.search + window.location.hash);
+      })();
+    </script>
+  </head>
+  <body>Redirection…</body>
+</html>
